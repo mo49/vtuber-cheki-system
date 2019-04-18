@@ -17,10 +17,7 @@ app.get('/paint', function(req, res) {
 });
 
 io.on('connection', function(socket){
-  // console.log('connected')
   socket.on('take_photo', function(data){
-    console.log('take photo')
-    console.log(data.blob)
     io.emit('send_photo', {'blob': data.blob});
   })
   socket.on('give_autograph', function(data){

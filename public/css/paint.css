@@ -1,3 +1,13 @@
 h1{
     color: #f00;
 }
+
+canvas{
+    width: 80vw;
+    height: auto;
+}
+
+/* button{
+    display: none;
+    margin-top: 50px;
+} */
