@@ -9,6 +9,7 @@ $(function() {
         canvas.toBlob(function(blob){
             socket.emit('take_photo', {'blob': blob});
         });
+        $('button').css('background-color', '#f00');
     })
 
     socket.on('send_qr', function(){
